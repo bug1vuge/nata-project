@@ -1,0 +1,19 @@
+/* options */
+@import './options/global.css';
+@import './options/fonts.css';
+@import './options/reset.css'; 
+
+/* components */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/mailing.css';
+@import './components/classesBlock.css';
+
+/* main page */
+@import './pages/mainPage.css';
+
+/* course page */
+@import './pages/coursePage.css';
+
+/* corporate education */
+@import './pages/corporateEducationPage.css';

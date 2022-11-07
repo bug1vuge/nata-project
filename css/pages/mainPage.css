@@ -1,0 +1,374 @@
+/* offer */
+.offer {
+    padding: 80px 0 130px;
+    background-image: url('../../images/main-page/offer-block/offer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.offer__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+.offer__content {
+    max-width: 570px;
+    width: 100%;
+}
+
+.offer__title {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 1.2;
+    color: #fff;
+
+    margin-bottom: 40px;
+}
+
+.offer__text {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+
+    margin-bottom: 60px;
+}
+
+.offer__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.offer__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+    padding: 0 40px;
+
+    border-radius: 24px;
+
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.offer__button:nth-child(1) {
+    background: #1c3b64;
+}
+
+.offer__button:nth-child(2) {
+    background: #f18821;
+}
+
+.offer__button:nth-child(1):hover {
+    background: #fff;
+    color: #1c3b64;
+    transition: all .4s ease;
+}
+
+.offer__button:nth-child(2):hover {
+    background: #fff;
+    color: #f18821;
+    transition: all .4s ease;
+}
+
+
+.offer__image-wrap {
+    position: relative;
+
+    max-width: 560px;
+    width: 100%;
+}
+
+.offer__image-wrap::after {
+    content: url('../../images/common/ellipse.png');
+    position: absolute;
+    bottom: -65px;
+    right: -65px;
+}
+
+.offer__image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*  */
+
+
+/* reviews */
+.reviews {
+    padding: 120px 0;
+    background-image: url('../../images/common/text-decor.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom 120px left 150px;
+}
+
+.reviews__slide-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 30px;
+
+    position: relative;
+    padding: 0 80px 100px 80px;
+}
+
+.reviews__slide-wrapper::after{
+    content: url('../../images/icons/quotes.png');
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+}
+
+.reviews__slide-image-wrap {
+    position: relative;
+}
+
+.reviews__slide-image-decor {
+    width: 80px;
+    height: 80px;
+    background: #4e8ce1;
+    border-radius: 50%;
+}
+
+.reviews__slide-image {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+
+.reviews__slide-text {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 2;
+    color: #1c3b64;
+
+    margin-bottom: 30px;
+}
+
+.reviews__slide-author {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #4e8ce1;
+}
+
+.reviews__slide-author span {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #4e8ce1;
+}
+
+.reviews__slider .splide__pagination {
+    position: static;
+    gap: 0 10px;
+}
+
+
+.reviews__slider .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background: #c9e1e9;
+}
+
+.reviews__slider .splide__pagination__page.is-active {
+    background: #4e8ce1;
+    transform: none;
+}
+
+.reviews__slider .splide__arrow {
+    top: 20%;
+    transform: none;
+    background: transparent;
+}
+
+.reviews__slider .splide__arrow--prev {
+    left: 0;
+}
+
+.reviews__slider .splide__arrow--next {
+    right: 0;
+}
+
+/*  */
+
+
+@media(max-width: 1440px) {
+    /* offer */
+    .offer {
+        background-size: 140%;
+    }
+
+    .offer__image-wrap::after {
+        display: none;
+    }
+    /*  */
+
+
+    /* reviews */
+    .reviews {
+        background-image: none;
+    }
+    /*  */
+}
+
+@media(max-width: 1200px) {
+    /* offer */
+    .offer {
+        background-image: none;
+        background: #4e8ce1;
+    }
+
+    .offer__inner {
+        align-items: center;
+    }
+
+    .offer__title {
+        font-size: 68px;
+    }
+    /*  */
+}
+
+@media(max-width: 1024px) {
+    /* offer */
+    .offer {
+        padding: 80px 0 100px;
+    }
+
+    .offer__inner {
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    .offer__content {
+        max-width: 100%;
+    }
+
+    .offer__title {
+        font-size: 62px;
+    }
+
+    .offer__text {
+        max-width: 760px;
+    }
+    /*  */
+
+
+    /* reviews */
+    .reviews {
+        padding: 100px 0;
+    }
+
+    .reviews__slide-wrapper {
+        padding: 0 20px 60px 20px;
+    }
+
+    .reviews__slide-wrapper::after{
+        right: 60px;
+        bottom: 30px;
+    }
+
+    .reviews__slide-text {
+        margin-bottom: 20px;
+    }
+
+    .reviews__slider .splide__arrow {
+        display: none;
+    }
+    /*  */
+}
+
+@media(max-width: 768px) {
+    /* offer */
+    .offer {
+        padding: 60px 0;
+    }
+
+    .offer__title {
+        font-size: 56px;
+    }
+
+    .offer__text {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .offer__button {
+        font-size: 14px;
+    }
+
+    .offer__image-wrap {
+        display: none;
+    }
+    /*  */
+
+
+    /* reviews */
+    .reviews {
+        padding: 60px 0;
+    }
+
+    .reviews__slide-wrapper {
+        display: block;
+        padding: 0 0 60px 0;
+    }
+
+    .reviews__slide-wrapper::after{
+        bottom: auto;
+        top: 20px;
+    }
+
+    .reviews__slide-image-wrap {
+        margin-bottom: 60px;
+    }
+
+    .reviews__slide-text {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /*  */
+}
+
+@media(max-width: 475px) {
+    /* offer */
+    .offer {
+        padding: 40px 0;
+    }
+
+    .offer__title {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    /*  */
+}
+
+@media(max-width: 375px) {
+    /* offer */
+    .offer__title {
+        font-size: 42px;
+    }
+
+    .offer__button {
+        padding: 0 30px;
+    }
+    /*  */
+}

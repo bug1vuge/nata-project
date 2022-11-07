@@ -1,0 +1,186 @@
+.header{
+    padding: 20px 0;
+    background: #fff;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+}
+
+.header-menu{
+    position: relative;
+    margin-left: 56px;
+    padding-left: 56px;
+}
+
+.header-menu::before{
+    content: '';
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 34px;
+    background: #bac4d0;
+}
+
+.header-menu__items{
+    display: flex;
+    align-items: center;
+    gap: 0 70px;
+}
+
+.header-menu__item-link{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #1c3b64;
+    transition: all .4s ease;
+}
+
+.header-menu__item-link.active {
+    color: #5f98f2;
+}
+
+.header-menu__item-link:hover {
+    color: #5f98f2;
+    transition: all .4s ease;
+}
+
+.header__login-button{
+    display: flex;
+    align-items: center;
+    gap: 0 13px;
+    margin-left: auto;
+
+    padding: 10px 25px;
+    background: #fff;
+    border: 1px solid #f18821;
+    border-radius: 20px;
+
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #f18821;
+}
+
+
+.header__burger-button{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.header__burger-button svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__burger-button svg path{
+    fill: #4e8ce1;
+}
+
+
+
+
+/* burger menu */
+.burger-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    z-index: 10;
+
+    max-width: 340px;
+    width: 100%;
+    height: 100vh;
+    
+    background: #f18821;
+    padding: 24px;
+
+    transform: translateX(100%);
+    transition: transform .4s ease;
+}
+
+.burger-menu.visible {
+    transform: translateX(0);
+    transition: all .4s ease;
+}
+
+.burger-menu__container{
+    height: 100%;
+    width: 100%;
+}
+
+.burger-menu__close-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-bottom: 60px;
+}
+
+.burger-menu__nav{
+    margin-bottom: 40px;
+}
+
+.burger-menu__nav-item{
+    margin-bottom: 15px;
+}
+
+.burger-menu__nav-item:last-child{
+    margin-bottom: 0;
+}
+
+.burger-menu__nav-link{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.burger-menu__login-button{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: underline;
+}
+/*  */
+
+
+@media(max-width: 1024px) {
+
+    .header__burger-button{
+        display: flex;
+    }
+
+    .header-menu,
+    .header__login-button{
+        display: none;
+    }
+
+    .header__inner{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 475px) {
+
+    .burger-menu {
+        max-width: 260px;
+    }
+}
