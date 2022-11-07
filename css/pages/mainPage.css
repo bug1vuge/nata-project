@@ -29,6 +29,10 @@
     margin-bottom: 40px;
 }
 
+.offer__title span{
+    display: block;
+}
+
 .offer__text {
     font-family: 'Gilroy';
     font-weight: 400;
